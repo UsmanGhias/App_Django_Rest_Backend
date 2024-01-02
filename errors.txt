@@ -1,0 +1,41 @@
+ pip install --upgrade django==3.2.11
+Requirement already satisfied: django==3.2.11 in ./venv-people/lib/python3.10/site-packages (3.2.11)
+Requirement already satisfied: asgiref<4,>=3.3.2 in ./venv-people/lib/python3.10/site-packages (from django==3.2.11) (3.7.2)
+Requirement already satisfied: pytz in ./venv-people/lib/python3.10/site-packages (from django==3.2.11) (2023.3.post1)
+Requirement already satisfied: sqlparse>=0.2.2 in ./venv-people/lib/python3.10/site-packages (from django==3.2.11) (0.4.4)
+Requirement already satisfied: typing-extensions>=4 in ./venv-people/lib/python3.10/site-packages (from asgiref<4,>=3.3.2->django==3.2.11) (4.9.0)
+(venv-people) usmanghias@UsmanGhias:~/UsmanGhias/Mobile Application/Django Rest BackEnd$ python -m django --version
+3.2.11
+(venv-people) usmanghias@UsmanGhias:~/UsmanGhias/Mobile Application/Django Rest BackEnd$ python manage.py makemigrations
+AWS ->  False
+Traceback (most recent call last):
+  File "/home/usmanghias/UsmanGhias/Mobile Application/Django Rest BackEnd/manage.py", line 24, in <module>
+    main()
+  File "/home/usmanghias/UsmanGhias/Mobile Application/Django Rest BackEnd/manage.py", line 20, in main
+    execute_from_command_line(sys.argv)
+  File "/home/usmanghias/UsmanGhias/Mobile Application/Django Rest BackEnd/venv-people/lib/python3.10/site-packages/django/core/management/__init__.py", line 419, in execute_from_command_line
+    utility.execute()
+  File "/home/usmanghias/UsmanGhias/Mobile Application/Django Rest BackEnd/venv-people/lib/python3.10/site-packages/django/core/management/__init__.py", line 395, in execute
+    django.setup()
+  File "/home/usmanghias/UsmanGhias/Mobile Application/Django Rest BackEnd/venv-people/lib/python3.10/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/usmanghias/UsmanGhias/Mobile Application/Django Rest BackEnd/venv-people/lib/python3.10/site-packages/django/apps/registry.py", line 122, in populate
+    app_config.ready()
+  File "/home/usmanghias/UsmanGhias/Mobile Application/Django Rest BackEnd/venv-people/lib/python3.10/site-packages/django/contrib/admin/apps.py", line 27, in ready
+    self.module.autodiscover()
+  File "/home/usmanghias/UsmanGhias/Mobile Application/Django Rest BackEnd/venv-people/lib/python3.10/site-packages/django/contrib/admin/__init__.py", line 24, in autodiscover
+    autodiscover_modules('admin', register_to=site)
+  File "/home/usmanghias/UsmanGhias/Mobile Application/Django Rest BackEnd/venv-people/lib/python3.10/site-packages/django/utils/module_loading.py", line 47, in autodiscover_modules
+    import_module('%s.%s' % (app_config.name, module_to_search))
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/usmanghias/UsmanGhias/Mobile Application/Django Rest BackEnd/api/admin.py", line 3, in <module>
+    from django.contrib.gis.admin.widgets import OSMWidget
+ImportError: cannot import name 'OSMWidget' from 'django.contrib.gis.admin.widgets' (/home/usmanghias/UsmanGhias/Mobile Application/Django Rest BackEnd/venv-people/lib/python3.10/site-packages/django/contrib/gis/admin/widgets.py)
+

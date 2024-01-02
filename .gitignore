@@ -1,0 +1,18 @@
+# .gitignore
+
+# Virtual environment
+venv/
+
+# Django static and media files
+static/
+media/
+
+# Local development settings
+local_settings.py
+
+# Byte-compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
