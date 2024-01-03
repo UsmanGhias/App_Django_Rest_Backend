@@ -78,9 +78,10 @@ texttable==1.6.4
 tomli==2.0.1
 Twisted==22.10.0
 txaio==23.1.1
-typing_extensions==4.3.0
+typing-extensions==4.3.0
 urllib3==1.26.12
 wcwidth==0.1.9
 websocket-client==0.59.0
 whitenoise==6.0.0
 zope.interface==5.5.2
+
