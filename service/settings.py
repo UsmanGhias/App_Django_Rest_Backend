@@ -73,6 +73,7 @@ INSTALLED_APPS = [
     "rest_framework",
     "corsheaders",
     "storages",
+    "leaflet",
     "rest_framework_simplejwt",
     "rest_framework_simplejwt.token_blacklist",
     "api.apps.ApiConfig",
